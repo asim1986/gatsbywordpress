@@ -31,6 +31,18 @@ module.exports = {
           `https://testy.iotthinker.com/graphql`,
       },
     },
+    
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "G-N6DLRYDES7",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: true,
+        // Setting this parameter is optional
+        anonymize: true,
+      },
+    },
 
     /**
      * We need this plugin so that it adds the "File.publicURL" to our site
